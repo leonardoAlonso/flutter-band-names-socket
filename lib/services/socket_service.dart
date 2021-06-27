@@ -18,9 +18,8 @@ class SocketService with ChangeNotifier {
   }
 
   void _initConfig() {
-    print("starting connection");
 
-    this._socket = IO.io('http://172.22.13.138:3000/', {
+    this._socket = IO.io('http://172.30.233.28:3000/', {
       'transports': ['websocket'],
       'autoConnect': true,
     });
